@@ -1,0 +1,11 @@
+{
+  "name": "pug-benchmark",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "pug-code-gen": "^1.1.0",
+    "pug-lexer": "^2.3.0",
+    "pug-linker": "^1.0.1",
+    "pug-parser": "^2.0.1"
+  }
+}
