@@ -9,6 +9,8 @@ node index.js
 
 ## Output on my machine
 
+With Node v6.9.0 on Linux:
+
 ```
 lex: 1788.619ms
 parse: 5.886ms
