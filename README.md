@@ -12,8 +12,7 @@ node index.js
 With Node v6.9.0 on Linux:
 
 ```
-lex: 1788.619ms
-parse: 5.886ms
-link: 1.844ms
-codeGen: 48.532ms
+lex: 1803.342ms
+parse: 291.767ms
+codeGen: 2462.688ms
 ```

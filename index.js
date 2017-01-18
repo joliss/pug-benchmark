@@ -24,22 +24,17 @@ console.timeEnd('lex')
 
 console.time('parse')
 for (var i = 0; i < n; i++) {
-  ast = parse(tokens, {
+  ast = parse(tokens.slice(0), {
     filename: fullPath,
     src: contents
   });
 }
 console.timeEnd('parse')
 
-console.time('link')
-for (var i = 0; i < n; i++) {
-  linkedAst = link(ast);
-}
-console.timeEnd('link')
+linkedAst = link(ast);
 
 console.time('codeGen')
 for (var i = 0; i < n; i++) {
-  code = codeGen(linkedAst);
+  code = codeGen(linkedAst, { compileDebug: false });
 }
 console.timeEnd('codeGen')
-
